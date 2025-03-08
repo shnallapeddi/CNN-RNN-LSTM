@@ -1,4 +1,8 @@
 
+## Title
+CNN, RNN and LSTM Architectures
+
+Please see the below details related to the files.
 | **File Name**                                           | **Description**                                                                                                                    | **Key References**                                                                                          |
 |---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | [a1_part_1.ipynb](./a1_part_1.ipynb)                   | Implements VGG-based CNN. Covers dataset loading, training loops, and initial analysis.                                            | [PyTorch Docs](https://pytorch.org/docs/stable), [Assignment PDF](Assignment-CNN-RNN-LSTM.pdf)               |
