@@ -33,20 +33,20 @@ pip install tensorflow
 
 #### Technical details worth noting
 
-a. Gradient diagnostics: utilities to log per-time-step gradient norms and visualize decay/explosion; optional clip_grad_norm_ to stabilize long sequences.
-b. Regularization: dropout in embeddings/recurrent layers, label smoothing (for classification heads), weight decay via optimizer.
-c. Initialization: comparisons of Xavier/He with/without residual paths.
-d. Scheduling: step or cosine annealing learning-rate schedules; early stopping callbacks.
-e. Evaluation: classification → accuracy, precision/recall/F1; forecasting → MAE, RMSE, MAPE; plus residual/error distribution plots.
-f. Reproducibility: seed setting and deterministic flags where supported
+1. Gradient diagnostics: utilities to log per-time-step gradient norms and visualize decay/explosion; optional clip_grad_norm_ to stabilize long sequences.
+2. Regularization: dropout in embeddings/recurrent layers, label smoothing (for classification heads), weight decay via optimizer.
+3. Initialization: comparisons of Xavier/He with/without residual paths.
+4. Scheduling: step or cosine annealing learning-rate schedules; early stopping callbacks.
+5. Evaluation: classification → accuracy, precision/recall/F1; forecasting → MAE, RMSE, MAPE; plus residual/error distribution plots.
+6. Reproducibility: seed setting and deterministic flags where supported
 
 #### Suggested runs
-a. Understand depth vs. trainability: run VGG to ResNet.ipynb, push depth upward, observe loss/grad stability with and without residuals.
-b. See cardinality effects: run ResNeXt.ipynb and vary group counts to trade FLOPs vs. accuracy.
-c. Feel vanishing gradients: run Investigating the Vanishing Gradient Problem.ipynb, plot gradient norms across time, then flip on gradient clipping and LSTM gating.
-d. Baseline NLP: run Sentiment Analysis using LSTM.ipynb, start with a small embedding/LSTM, then toggle bidirectionality and dropout to see generalization change.
-e. Forecasting: run Time Series Forecasting using RNNs.ipynb with your own CSV, tune window size and horizon; compare teacher-forced vs. open-loop predictions.
-f. Fine-tune efficiently: run Transfer Learning with Pre-trained Models.ipynb, freeze backbone layers, train head, then unfreeze top blocks with a lower LR.
+1. Understand depth vs. trainability: run VGG to ResNet.ipynb, push depth upward, observe loss/grad stability with and without residuals.
+2. See cardinality effects: run ResNeXt.ipynb and vary group counts to trade FLOPs vs. accuracy.
+3. Feel vanishing gradients: run Investigating the Vanishing Gradient Problem.ipynb, plot gradient norms across time, then flip on gradient clipping and LSTM gating.
+4. Baseline NLP: run Sentiment Analysis using LSTM.ipynb, start with a small embedding/LSTM, then toggle bidirectionality and dropout to see generalization change.
+5. Forecasting: run Time Series Forecasting using RNNs.ipynb with your own CSV, tune window size and horizon; compare teacher-forced vs. open-loop predictions.
+6. Fine-tune efficiently: run Transfer Learning with Pre-trained Models.ipynb, freeze backbone layers, train head, then unfreeze top blocks with a lower LR.
 
 
 
